@@ -85,7 +85,7 @@ fig4 = px.scatter(df_monthly_new,
            #range_x=['may','march'], 
            range_y=[0,10],
             height= 500,
-            width=1000)
+            width=1100)
            #category_orders={"month_year": df_monthly_new["month_year"].unique()[::5]})
 
 fig4.update_xaxes(ticktext=df_monthly_new['month_year'], #.dt.strftime(‘%b %Y’),  # Format tick labels as abbreviated month and year
