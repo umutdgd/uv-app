@@ -139,20 +139,14 @@ dropdown = dcc.Dropdown(['Berlin', 'Lisbon', 'Izmir'],  value=['Berlin', 'Lisbon
                         clearable=False, multi=True, style ={'paddingLeft': '30px', 
                                                              "backgroundColor": "#ECECEC", "color": "#222222"})
 
-app.layout = html.Div([html.H1('Day light Analysis of Berlin - Lisbon - Izmir', style={'textAlign': 'center', 'color': '#FFA500'}), 
+app.layout = html.Div([html.H1('Day light Analysis of Berlin - Lisbon - Izmir', style={'textAlign': 'center',"backgroundColor": "#ECECEC", 'color': '#FFA500'}), 
                        html.Div(html.P("Using Weather.api data to analys UV and Daylight time of Berlin - Lisbon - Izmir"), 
-                                style={'textAlign': 'center'}),
-                       html.Div([html.Div('Berlin - Lisbon - Izmir',
-                                          style={'textAlign': 'center','backgroundColor': '#FFA500', 'color': 'black', 
+                                style={'textAlign': 'center',"backgroundColor": "#ECECEC", 'color': 'black'}),
+                       html.Div([html.Div('by Umut Dogdu',
+                                          style={'textAlign': 'center','backgroundColor': '#ECECEC', 'color': 'black', 
                                                  'width': '900px', 'marginLeft': 'auto', 'marginRight': 'auto'}), 
 
                                  dropdown, graph1,  graph2, graph3,  graph4,  graph5])
-                                 #dcc.Graph(figure=fig1),  
-                                 #dcc.Graph(figure=fig2), 
-                                 #dcc.Graph(figure=fig3),
-                                 #dcc.Graph(figure=fig4),
-                                 #dcc.Graph(figure=fig5)])
-
                     
 ])
 
